@@ -14,16 +14,6 @@ data = load_model()
 classification = data["model"]
 
 
-def labelencoder_load():
-    with open('encoder.pkl', 'rb') as file:
-        le = pickle.load(file)
-    return le
-
-label = labelencoder_load()
-
-le = label["labelencoder"]
-
-
 def show_predict_page():
     # Title
     st.title("Student Depression Prediction")
